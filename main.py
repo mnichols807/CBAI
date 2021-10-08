@@ -17,16 +17,12 @@ import os
 import importlib
 import sys
 import ChatBotData as CBD
-
 importlib.reload(CBD)
-
 def clear():
     os.system('cls' if os.name=='nt' else 'clear')
 clear()
-
 #X is the word added to LearnedGreetings
 X = "helloworld"
-
 with open('ChatBotData.py', 'r') as _CBD:
     CBDread = _CBD.read()
     #print(CBDread.split("\n")[1])

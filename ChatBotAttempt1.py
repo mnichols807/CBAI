@@ -13,7 +13,6 @@ cls()
 #after this run runtest() to use the program
 runtest()
 """
-
 import time
 import threading
 import importlib
@@ -25,11 +24,9 @@ import os
 import sys
 #Reload ChatBotData
 importlib.reload(CBD)
-
 def clear():
     os.system('cls' if os.name=='nt' else 'clear')
 clear()
-
 #making it easier to create inputs
 def ci(addwrd : str = ''):
     ci.tempinput = None
@@ -56,7 +53,6 @@ def f():
         #if keyboard.read_key() == '1':
             #time.sleep(1)
         time.sleep(0.15)
-
 ci(CBD.Greetings[CBD.greetingsi])
 #testing a way to save words
 if (ci.tempinput.split(' ')[0] == str(CBD.initialresponses[0])):
@@ -68,7 +64,6 @@ ci("Input")
 if(ci.tempinput == 'testingtime'):
     thread = threading.Thread(target=f)
     thread.start()
-
 #remove everything, but the commas from a list
 templist = str(str(str(str(str(CBD.Responses[0]).replace(']','')).replace('[','')).replace("'",'')).replace(' ','')).replace(',',' ')
 print(templist)
