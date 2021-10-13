@@ -13,6 +13,7 @@ cls()
 #after this run runtest() to use the program
 runtest()
 """
+import flask
 import os
 import importlib
 import sys
