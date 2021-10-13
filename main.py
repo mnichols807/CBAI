@@ -23,10 +23,10 @@ app = Flask(__name__)
 #This is the first page that comes when you type localhost:5000... it will have a a tag that redirects to a page
 @app.route("/")
 def  HomePage():
-    return "<a href='/runscript'>EXECUTE SCRIPT </a>"
+    return
 
 #Once it redirects here (to localhost:5000/runscript) it will run the code before the return statement
-@app.route("/runscript")
+@app.route("/CBAI")
 def ScriptPage():
     #Type what you want to do when the user clicks on the link
     # once it is done with doing that code... it will redirect back to the homepage
