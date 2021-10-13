@@ -21,13 +21,14 @@ app = Flask(__name__)
 
 
 #This is the first page that comes when you type localhost:5000... it will have a a tag that redirects to a page
-@app.route("/")
+@app.route("/CBAI")
 def  HomePage():
     return
 
 #Once it redirects here (to localhost:5000/runscript) it will run the code before the return statement
 @app.route("/CBAI")
 def ScriptPage():
+    print("<html><body>TestingTesting</body></html>")
     #Type what you want to do when the user clicks on the link
     # once it is done with doing that code... it will redirect back to the homepage
     return redirect(url_for("HomePage"))
@@ -61,4 +62,3 @@ print(Test)
 #To update the Storage File, unhash the following.
 #with open('ChatBotData.py', 'w') as _CBD:
     #_CBD.write(Test)
-print("<html><body>TestingTesting</body></html>")
