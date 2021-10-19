@@ -2,11 +2,20 @@
 <html>
     <meta charset="UTF-8">
     <head>
-        <title>Title7</title>
+        <title>Title8</title>
     </head>
     <body>
         <h1>Hello World!</h1>
-        <a href='/CBAI'>EXECUTE SCRIPT</a>
-        <link href="main.py">
+        <input type="button" id='script' name="scriptbutton" value=" Run Script " onclick="goPython()">
+        <script>
+        function goPython(){
+            $.ajax({
+              url: "main.py",
+             context: document.body
+            }).done(function() {
+             alert('finished python script');;
+            });
+        }
+    </script>
     </body>
 </html>
