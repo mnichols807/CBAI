@@ -2,19 +2,14 @@
 <html>
     <meta charset="UTF-8">
     <head>
-        <title>Title8</title>
+        <title>Title9</title>
     </head>
     <body>
         <h1>Hello World!</h1>
         <input type="button" id='script' name="scriptbutton" value=" Run Script " onclick="goPython()">
         <script>
         function goPython(){
-            $.ajax({
-              url: "main.py",
-             context: document.body
-            }).done(function() {
-             alert('finished python script');;
-            });
+            print("testing123")
         }
     </script>
     </body>
