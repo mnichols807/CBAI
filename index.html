@@ -7,7 +7,9 @@
     <body>
         <h1>Hello World!</h1>
         <input type="button" id='script' name="scriptbutton" value=" Run Script " onclick="goPython()">
-        
+        <?PHP
+        echo shell_exec("python main.py");
+        ?>
     </script>
     </body>
 </html>
