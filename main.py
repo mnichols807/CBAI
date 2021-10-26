@@ -37,5 +37,8 @@ TestStr = "LearnedGreetings"
 Test = CBDread.replace(CorrectLine, NewLine)
 print(Test)
 #To update the Storage File, unhash the following.
-#with open('ChatBotData.py', 'w') as _CBD:
-    #_CBD.write(Test)
+with open('index.html', 'r') as html:
+    editedhtml = html.read()
+#with open('index.html', 'w') as html:
+    #html.write(editedhtml)
+print(editedhtml)
