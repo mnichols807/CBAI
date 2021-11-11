@@ -42,5 +42,3 @@ with open('index.html', 'r') as html:
 #with open('index.html', 'w') as html:
     #html.write(editedhtml)
 print(editedhtml)
-input=sys.argv[1]
-print(input)
